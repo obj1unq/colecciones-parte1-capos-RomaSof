@@ -40,6 +40,18 @@ object rolando{
 
 }
 
+//lugares
+object castillo {
+
+    const property artefactos = #{}
+    var property cofre = #{}
+
+    method almacenar(_artefactos) {
+      cofre.addAll(_artefactos)
+    }
+
+}
+
 //elementos
 object espada{}
 
@@ -48,14 +60,3 @@ object collar{}
 object libro{}
 
 object armadura {}
-
-//lugares
-object castillo {
-
-    var property cofre = #{}
-
-    method almacenar(artefactos) {
-      cofre.addAll(artefactos)
-    }
-
-}
